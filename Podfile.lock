@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (3.4.0)
+  - Cosmos (1.2.3)
+  - EZLoadingActivity (0.8)
+  - GoogleMaps (1.13.2)
+  - Kingfisher (2.4.1)
+  - Spring (1.0.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cosmos
+  - EZLoadingActivity
+  - GoogleMaps
+  - Kingfisher
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift2
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 18d5c7b74489de8044e34767f856d1e574f0820e
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  Cosmos: efddd01b729956ad6335bc58bc92e5735a1d12a3
+  EZLoadingActivity: 6fd75a05765a4085f4b6fef6f62edf9f144b3139
+  GoogleMaps: b20a103ff307f58392e603cf142e59d7e30374c1
+  Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+
+PODFILE CHECKSUM: bc6701b49581c48b0d9030489619ca9739668ef7
+
+COCOAPODS: 1.0.1

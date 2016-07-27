@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1282D39B22A5C1C5A3BC6E34 /* Pods_SalonUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49AA29E496AA4A768F97E643 /* Pods_SalonUp.framework */; };
+		8B31E428600BB6E54005A878 /* Pods_SalonUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD7EBA480553BAF965F01F4 /* Pods_SalonUpTests.framework */; };
+		BF607472EED0206A1A4A749A /* Pods_SalonUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEC08A02BEEDBDFAC843AE0 /* Pods_SalonUpUITests.framework */; };
+		EC6931391D438BDE00D11327 /* SalonDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6931381D438BDE00D11327 /* SalonDetailController.swift */; };
+		EC69313B1D43915000D11327 /* SalonDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69313A1D43915000D11327 /* SalonDetailCell.swift */; };
+		EC69313D1D43916100D11327 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC69313C1D43916100D11327 /* ReviewCell.swift */; };
+		EC69313F1D43A16800D11327 /* SalonDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC69313E1D43A16800D11327 /* SalonDetailCell.xib */; };
+		EC6931411D43DB2900D11327 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6931401D43DB2900D11327 /* Helper.swift */; };
+		EC6931431D43F0C600D11327 /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6931421D43F0C600D11327 /* MapViewCell.swift */; };
+		EC6931451D43FC8000D11327 /* MapViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC6931441D43FC8000D11327 /* MapViewCell.xib */; };
+		EC81DF751D37FA6200FD1851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC81DF741D37FA6200FD1851 /* AppDelegate.swift */; };
+		EC81DF7A1D37FA6300FD1851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC81DF781D37FA6300FD1851 /* Main.storyboard */; };
+		EC81DF7D1D37FA6300FD1851 /* SalonUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC81DF7B1D37FA6300FD1851 /* SalonUp.xcdatamodeld */; };
+		EC81DF7F1D37FA6300FD1851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC81DF7E1D37FA6300FD1851 /* Assets.xcassets */; };
+		EC81DF821D37FA6300FD1851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC81DF801D37FA6300FD1851 /* LaunchScreen.storyboard */; };
+		EC81DF8D1D37FA6300FD1851 /* SalonUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC81DF8C1D37FA6300FD1851 /* SalonUpTests.swift */; };
+		EC81DF981D37FA6300FD1851 /* SalonUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC81DF971D37FA6300FD1851 /* SalonUpUITests.swift */; };
+		EC81DFAD1D38034400FD1851 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC81DFAC1D38034400FD1851 /* Router.swift */; };
+		EC81DFAF1D380F9800FD1851 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC81DFAE1D380F9800FD1851 /* CoreLocation.framework */; };
+		EC8F90101D3F51820008CC28 /* SalonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8F900F1D3F51820008CC28 /* SalonDetails.swift */; };
+		EC92A2F91D42A63E007DFFDF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92A2F81D42A63E007DFFDF /* Extensions.swift */; };
+		EC93FE301D3E04A200C4B685 /* LoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC93FE2F1D3E04A200C4B685 /* LoadingController.swift */; };
+		EC93FE361D3E055100C4B685 /* LoadingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC93FE351D3E055100C4B685 /* LoadingController.xib */; };
+		ECCDF1711D3CCE6200EFF434 /* SalonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDF1701D3CCE6000EFF434 /* SalonController.swift */; };
+		ECCDF1741D3CD31700EFF434 /* SalonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDF1731D3CD31700EFF434 /* SalonCell.swift */; };
+		ECCDF1781D3D127400EFF434 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCDF1771D3D127400EFF434 /* Constants.swift */; };
+		ECFEADF21D38D6F900C30CB6 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFEADF11D38D6F900C30CB6 /* Parser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC81DF891D37FA6300FD1851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC81DF691D37FA6200FD1851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC81DF701D37FA6200FD1851;
+			remoteInfo = SalonUp;
+		};
+		EC81DF941D37FA6300FD1851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC81DF691D37FA6200FD1851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC81DF701D37FA6200FD1851;
+			remoteInfo = SalonUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EA3FA0EC4488F692004B732 /* Pods-SalonUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalonUpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalonUpTests/Pods-SalonUpTests.release.xcconfig"; sourceTree = "<group>"; };
+		404224F31979488A42A94BAB /* Pods-SalonUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalonUpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalonUpTests/Pods-SalonUpTests.debug.xcconfig"; sourceTree = "<group>"; };
+		49AA29E496AA4A768F97E643 /* Pods_SalonUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalonUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78CF14475142C17D0EC7BD87 /* Pods-SalonUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalonUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalonUp/Pods-SalonUp.release.xcconfig"; sourceTree = "<group>"; };
+		BCD7EBA480553BAF965F01F4 /* Pods_SalonUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalonUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEEC08A02BEEDBDFAC843AE0 /* Pods_SalonUpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalonUpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C173E0524E0032EBFFF13FF0 /* Pods-SalonUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalonUpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalonUpUITests/Pods-SalonUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D05C9113A343FC07D35B008F /* Pods-SalonUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalonUpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalonUpUITests/Pods-SalonUpUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EC6931381D438BDE00D11327 /* SalonDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SalonDetailController.swift; path = HomeController/SalonDetailController.swift; sourceTree = "<group>"; };
+		EC69313A1D43915000D11327 /* SalonDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SalonDetailCell.swift; path = HomeController/Cell/SalonDetailCell.swift; sourceTree = "<group>"; };
+		EC69313C1D43916100D11327 /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReviewCell.swift; path = HomeController/Cell/ReviewCell.swift; sourceTree = "<group>"; };
+		EC69313E1D43A16800D11327 /* SalonDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SalonDetailCell.xib; path = HomeController/Cell/SalonDetailCell.xib; sourceTree = "<group>"; };
+		EC6931401D43DB2900D11327 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Utilities/Helper.swift; sourceTree = "<group>"; };
+		EC6931421D43F0C600D11327 /* MapViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewCell.swift; path = HomeController/Cell/MapViewCell.swift; sourceTree = "<group>"; };
+		EC6931441D43FC8000D11327 /* MapViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapViewCell.xib; path = HomeController/Cell/MapViewCell.xib; sourceTree = "<group>"; };
+		EC81DF711D37FA6200FD1851 /* SalonUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC81DF741D37FA6200FD1851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC81DF791D37FA6300FD1851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC81DF7C1D37FA6300FD1851 /* SalonUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SalonUp.xcdatamodel; sourceTree = "<group>"; };
+		EC81DF7E1D37FA6300FD1851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC81DF811D37FA6300FD1851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC81DF831D37FA6300FD1851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC81DF881D37FA6300FD1851 /* SalonUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalonUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC81DF8C1D37FA6300FD1851 /* SalonUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonUpTests.swift; sourceTree = "<group>"; };
+		EC81DF8E1D37FA6300FD1851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC81DF931D37FA6300FD1851 /* SalonUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalonUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC81DF971D37FA6300FD1851 /* SalonUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonUpUITests.swift; sourceTree = "<group>"; };
+		EC81DF991D37FA6300FD1851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC81DFAC1D38034400FD1851 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Utilities/Router.swift; sourceTree = "<group>"; };
+		EC81DFAE1D380F9800FD1851 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EC8F900F1D3F51820008CC28 /* SalonDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SalonDetails.swift; path = Model/SalonDetails.swift; sourceTree = "<group>"; };
+		EC92A2F81D42A63E007DFFDF /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Utilities/Extensions.swift; sourceTree = "<group>"; };
+		EC93FE2F1D3E04A200C4B685 /* LoadingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingController.swift; path = HomeController/ActivityLoader/LoadingController.swift; sourceTree = "<group>"; };
+		EC93FE351D3E055100C4B685 /* LoadingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingController.xib; path = HomeController/ActivityLoader/LoadingController.xib; sourceTree = "<group>"; };
+		ECCDF1701D3CCE6000EFF434 /* SalonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SalonController.swift; path = HomeController/SalonController.swift; sourceTree = "<group>"; };
+		ECCDF1731D3CD31700EFF434 /* SalonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SalonCell.swift; path = HomeController/Cell/SalonCell.swift; sourceTree = "<group>"; };
+		ECCDF1771D3D127400EFF434 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Utilities/Constants.swift; sourceTree = "<group>"; };
+		ECFEADF11D38D6F900C30CB6 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Utilities/Parser.swift; sourceTree = "<group>"; };
+		F69AAE255521E194F30510D1 /* Pods-SalonUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalonUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalonUp/Pods-SalonUp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC81DF6E1D37FA6200FD1851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC81DFAF1D380F9800FD1851 /* CoreLocation.framework in Frameworks */,
+				1282D39B22A5C1C5A3BC6E34 /* Pods_SalonUp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC81DF851D37FA6300FD1851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B31E428600BB6E54005A878 /* Pods_SalonUpTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC81DF901D37FA6300FD1851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF607472EED0206A1A4A749A /* Pods_SalonUpUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C740EEA5A455E6E23DD9EEA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC81DFAE1D380F9800FD1851 /* CoreLocation.framework */,
+				49AA29E496AA4A768F97E643 /* Pods_SalonUp.framework */,
+				BCD7EBA480553BAF965F01F4 /* Pods_SalonUpTests.framework */,
+				BEEC08A02BEEDBDFAC843AE0 /* Pods_SalonUpUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC81DF681D37FA6200FD1851 = {
+			isa = PBXGroup;
+			children = (
+				EC81DF731D37FA6200FD1851 /* SalonUp */,
+				EC81DFA81D37FEB100FD1851 /* Pods */,
+				EC81DF8B1D37FA6300FD1851 /* SalonUpTests */,
+				EC81DF961D37FA6300FD1851 /* SalonUpUITests */,
+				EC81DF721D37FA6200FD1851 /* Products */,
+				C740EEA5A455E6E23DD9EEA1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC81DF721D37FA6200FD1851 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC81DF711D37FA6200FD1851 /* SalonUp.app */,
+				EC81DF881D37FA6300FD1851 /* SalonUpTests.xctest */,
+				EC81DF931D37FA6300FD1851 /* SalonUpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC81DF731D37FA6200FD1851 /* SalonUp */ = {
+			isa = PBXGroup;
+			children = (
+				ECFEADEE1D38D5B200C30CB6 /* Model */,
+				EC81DFA91D3802E700FD1851 /* Utilities */,
+				EC81DFA51D37FAF300FD1851 /* Controllers */,
+				EC81DF741D37FA6200FD1851 /* AppDelegate.swift */,
+				EC81DF781D37FA6300FD1851 /* Main.storyboard */,
+				EC81DF7E1D37FA6300FD1851 /* Assets.xcassets */,
+				EC81DF801D37FA6300FD1851 /* LaunchScreen.storyboard */,
+				EC81DF831D37FA6300FD1851 /* Info.plist */,
+				EC81DF7B1D37FA6300FD1851 /* SalonUp.xcdatamodeld */,
+			);
+			path = SalonUp;
+			sourceTree = "<group>";
+		};
+		EC81DF8B1D37FA6300FD1851 /* SalonUpTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC81DF8C1D37FA6300FD1851 /* SalonUpTests.swift */,
+				EC81DF8E1D37FA6300FD1851 /* Info.plist */,
+			);
+			path = SalonUpTests;
+			sourceTree = "<group>";
+		};
+		EC81DF961D37FA6300FD1851 /* SalonUpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC81DF971D37FA6300FD1851 /* SalonUpUITests.swift */,
+				EC81DF991D37FA6300FD1851 /* Info.plist */,
+			);
+			path = SalonUpUITests;
+			sourceTree = "<group>";
+		};
+		EC81DFA51D37FAF300FD1851 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC93FE2E1D3E045600C4B685 /* ActivityLoader */,
+				ECCDF1721D3CD2F400EFF434 /* Cell */,
+				ECCDF1701D3CCE6000EFF434 /* SalonController.swift */,
+				EC6931381D438BDE00D11327 /* SalonDetailController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		EC81DFA81D37FEB100FD1851 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F69AAE255521E194F30510D1 /* Pods-SalonUp.debug.xcconfig */,
+				78CF14475142C17D0EC7BD87 /* Pods-SalonUp.release.xcconfig */,
+				404224F31979488A42A94BAB /* Pods-SalonUpTests.debug.xcconfig */,
+				1EA3FA0EC4488F692004B732 /* Pods-SalonUpTests.release.xcconfig */,
+				C173E0524E0032EBFFF13FF0 /* Pods-SalonUpUITests.debug.xcconfig */,
+				D05C9113A343FC07D35B008F /* Pods-SalonUpUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC81DFA91D3802E700FD1851 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EC81DFAC1D38034400FD1851 /* Router.swift */,
+				ECFEADF11D38D6F900C30CB6 /* Parser.swift */,
+				ECCDF1771D3D127400EFF434 /* Constants.swift */,
+				EC92A2F81D42A63E007DFFDF /* Extensions.swift */,
+				EC6931401D43DB2900D11327 /* Helper.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		EC93FE2E1D3E045600C4B685 /* ActivityLoader */ = {
+			isa = PBXGroup;
+			children = (
+				EC93FE2F1D3E04A200C4B685 /* LoadingController.swift */,
+				EC93FE351D3E055100C4B685 /* LoadingController.xib */,
+			);
+			name = ActivityLoader;
+			sourceTree = "<group>";
+		};
+		ECCDF1721D3CD2F400EFF434 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ECCDF1731D3CD31700EFF434 /* SalonCell.swift */,
+				EC69313A1D43915000D11327 /* SalonDetailCell.swift */,
+				EC69313C1D43916100D11327 /* ReviewCell.swift */,
+				EC69313E1D43A16800D11327 /* SalonDetailCell.xib */,
+				EC6931421D43F0C600D11327 /* MapViewCell.swift */,
+				EC6931441D43FC8000D11327 /* MapViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		ECFEADEE1D38D5B200C30CB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC8F900F1D3F51820008CC28 /* SalonDetails.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC81DF701D37FA6200FD1851 /* SalonUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC81DF9C1D37FA6300FD1851 /* Build configuration list for PBXNativeTarget "SalonUp" */;
+			buildPhases = (
+				772EB94459FCEB588B07D108 /* [CP] Check Pods Manifest.lock */,
+				EC81DF6D1D37FA6200FD1851 /* Sources */,
+				EC81DF6E1D37FA6200FD1851 /* Frameworks */,
+				EC81DF6F1D37FA6200FD1851 /* Resources */,
+				C40D7D5FD4B02EF15C52F917 /* [CP] Embed Pods Frameworks */,
+				C9055DC72F77497C4EDFC9BE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalonUp;
+			productName = SalonUp;
+			productReference = EC81DF711D37FA6200FD1851 /* SalonUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC81DF871D37FA6300FD1851 /* SalonUpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC81DF9F1D37FA6300FD1851 /* Build configuration list for PBXNativeTarget "SalonUpTests" */;
+			buildPhases = (
+				B5749D8A75AA680EF46DEE94 /* [CP] Check Pods Manifest.lock */,
+				EC81DF841D37FA6300FD1851 /* Sources */,
+				EC81DF851D37FA6300FD1851 /* Frameworks */,
+				EC81DF861D37FA6300FD1851 /* Resources */,
+				954DD16E9B70E219F66F89E9 /* [CP] Embed Pods Frameworks */,
+				54965443442CC6D011A52E88 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC81DF8A1D37FA6300FD1851 /* PBXTargetDependency */,
+			);
+			name = SalonUpTests;
+			productName = SalonUpTests;
+			productReference = EC81DF881D37FA6300FD1851 /* SalonUpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC81DF921D37FA6300FD1851 /* SalonUpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC81DFA21D37FA6300FD1851 /* Build configuration list for PBXNativeTarget "SalonUpUITests" */;
+			buildPhases = (
+				BDC7BB3D53D95DC604208429 /* [CP] Check Pods Manifest.lock */,
+				EC81DF8F1D37FA6300FD1851 /* Sources */,
+				EC81DF901D37FA6300FD1851 /* Frameworks */,
+				EC81DF911D37FA6300FD1851 /* Resources */,
+				D495A0CE7B8D393D9D274120 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC81DF951D37FA6300FD1851 /* PBXTargetDependency */,
+			);
+			name = SalonUpUITests;
+			productName = SalonUpUITests;
+			productReference = EC81DF931D37FA6300FD1851 /* SalonUpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC81DF691D37FA6200FD1851 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Anagha Ajith";
+				TargetAttributes = {
+					EC81DF701D37FA6200FD1851 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					EC81DF871D37FA6300FD1851 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EC81DF701D37FA6200FD1851;
+					};
+					EC81DF921D37FA6300FD1851 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EC81DF701D37FA6200FD1851;
+					};
+				};
+			};
+			buildConfigurationList = EC81DF6C1D37FA6200FD1851 /* Build configuration list for PBXProject "SalonUp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC81DF681D37FA6200FD1851;
+			productRefGroup = EC81DF721D37FA6200FD1851 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC81DF701D37FA6200FD1851 /* SalonUp */,
+				EC81DF871D37FA6300FD1851 /* SalonUpTests */,
+				EC81DF921D37FA6300FD1851 /* SalonUpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC81DF6F1D37FA6200FD1851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC93FE361D3E055100C4B685 /* LoadingController.xib in Resources */,
+				EC6931451D43FC8000D11327 /* MapViewCell.xib in Resources */,
+				EC81DF821D37FA6300FD1851 /* LaunchScreen.storyboard in Resources */,
+				EC81DF7F1D37FA6300FD1851 /* Assets.xcassets in Resources */,
+				EC81DF7A1D37FA6300FD1851 /* Main.storyboard in Resources */,
+				EC69313F1D43A16800D11327 /* SalonDetailCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC81DF861D37FA6300FD1851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC81DF911D37FA6300FD1851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54965443442CC6D011A52E88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalonUpTests/Pods-SalonUpTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		772EB94459FCEB588B07D108 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		954DD16E9B70E219F66F89E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalonUpTests/Pods-SalonUpTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5749D8A75AA680EF46DEE94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDC7BB3D53D95DC604208429 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C40D7D5FD4B02EF15C52F917 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalonUp/Pods-SalonUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9055DC72F77497C4EDFC9BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalonUp/Pods-SalonUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D495A0CE7B8D393D9D274120 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalonUpUITests/Pods-SalonUpUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC81DF6D1D37FA6200FD1851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC69313B1D43915000D11327 /* SalonDetailCell.swift in Sources */,
+				EC6931431D43F0C600D11327 /* MapViewCell.swift in Sources */,
+				ECCDF1711D3CCE6200EFF434 /* SalonController.swift in Sources */,
+				EC81DFAD1D38034400FD1851 /* Router.swift in Sources */,
+				EC6931411D43DB2900D11327 /* Helper.swift in Sources */,
+				EC69313D1D43916100D11327 /* ReviewCell.swift in Sources */,
+				EC93FE301D3E04A200C4B685 /* LoadingController.swift in Sources */,
+				EC81DF751D37FA6200FD1851 /* AppDelegate.swift in Sources */,
+				EC81DF7D1D37FA6300FD1851 /* SalonUp.xcdatamodeld in Sources */,
+				EC6931391D438BDE00D11327 /* SalonDetailController.swift in Sources */,
+				EC92A2F91D42A63E007DFFDF /* Extensions.swift in Sources */,
+				EC8F90101D3F51820008CC28 /* SalonDetails.swift in Sources */,
+				ECFEADF21D38D6F900C30CB6 /* Parser.swift in Sources */,
+				ECCDF1741D3CD31700EFF434 /* SalonCell.swift in Sources */,
+				ECCDF1781D3D127400EFF434 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC81DF841D37FA6300FD1851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC81DF8D1D37FA6300FD1851 /* SalonUpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC81DF8F1D37FA6300FD1851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC81DF981D37FA6300FD1851 /* SalonUpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC81DF8A1D37FA6300FD1851 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC81DF701D37FA6200FD1851 /* SalonUp */;
+			targetProxy = EC81DF891D37FA6300FD1851 /* PBXContainerItemProxy */;
+		};
+		EC81DF951D37FA6300FD1851 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC81DF701D37FA6200FD1851 /* SalonUp */;
+			targetProxy = EC81DF941D37FA6300FD1851 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC81DF781D37FA6300FD1851 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC81DF791D37FA6300FD1851 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC81DF801D37FA6300FD1851 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC81DF811D37FA6300FD1851 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC81DF9A1D37FA6300FD1851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC81DF9B1D37FA6300FD1851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC81DF9D1D37FA6300FD1851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F69AAE255521E194F30510D1 /* Pods-SalonUp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SalonUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.incture.SalonUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EC81DF9E1D37FA6300FD1851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78CF14475142C17D0EC7BD87 /* Pods-SalonUp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = SalonUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.incture.SalonUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EC81DFA01D37FA6300FD1851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 404224F31979488A42A94BAB /* Pods-SalonUpTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SalonUpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.incture.SalonUpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalonUp.app/SalonUp";
+			};
+			name = Debug;
+		};
+		EC81DFA11D37FA6300FD1851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EA3FA0EC4488F692004B732 /* Pods-SalonUpTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SalonUpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.incture.SalonUpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalonUp.app/SalonUp";
+			};
+			name = Release;
+		};
+		EC81DFA31D37FA6300FD1851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C173E0524E0032EBFFF13FF0 /* Pods-SalonUpUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = SalonUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.incture.SalonUpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SalonUp;
+			};
+			name = Debug;
+		};
+		EC81DFA41D37FA6300FD1851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D05C9113A343FC07D35B008F /* Pods-SalonUpUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = SalonUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.incture.SalonUpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SalonUp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC81DF6C1D37FA6200FD1851 /* Build configuration list for PBXProject "SalonUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC81DF9A1D37FA6300FD1851 /* Debug */,
+				EC81DF9B1D37FA6300FD1851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC81DF9C1D37FA6300FD1851 /* Build configuration list for PBXNativeTarget "SalonUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC81DF9D1D37FA6300FD1851 /* Debug */,
+				EC81DF9E1D37FA6300FD1851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC81DF9F1D37FA6300FD1851 /* Build configuration list for PBXNativeTarget "SalonUpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC81DFA01D37FA6300FD1851 /* Debug */,
+				EC81DFA11D37FA6300FD1851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC81DFA21D37FA6300FD1851 /* Build configuration list for PBXNativeTarget "SalonUpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC81DFA31D37FA6300FD1851 /* Debug */,
+				EC81DFA41D37FA6300FD1851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC81DF7B1D37FA6300FD1851 /* SalonUp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC81DF7C1D37FA6300FD1851 /* SalonUp.xcdatamodel */,
+			);
+			currentVersion = EC81DF7C1D37FA6300FD1851 /* SalonUp.xcdatamodel */;
+			path = SalonUp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EC81DF691D37FA6200FD1851 /* Project object */;
+}
